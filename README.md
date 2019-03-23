@@ -8,7 +8,7 @@
 
 ## 1. 安装最新版的 conky
 
-    去这里看安装方法 https://github.com/brndnmtthws/conky/blob/master/README.md#quickstart 
+去这里看安装方法 https://github.com/brndnmtthws/conky/blob/master/README.md#quickstart 
 
 ## 2. 拷贝文件到对应的目录
 
@@ -20,3 +20,6 @@
 
 # 效果
 
+获取天气的接口有问题，想要完整的天气得自己写了。可以用这里的api https://github.com/jokermonn/-Api
+
+![https://github.com/hanxi/conky-theme-hanxi/blob/master/screenshot.png?raw=true](https://github.com/hanxi/conky-theme-hanxi/blob/master/screenshot.png?raw=true)
