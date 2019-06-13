@@ -61,12 +61,12 @@ conky.config = {
     color3="green",
 
     own_window = true,
+    own_window_type = 'normal',
     own_window_transparent = false,
     own_window_hints = 'undecorated,sticky,below,skip_taskbar,skip_pager',
     own_window_argb_visual = true,
     own_window_argb_value = 0,
-    own_window_class = 'Conky',
-    own_window_type = 'desktop',
+
     double_buffer = true,
 }
 
@@ -104,8 +104,6 @@ ${voffset -5}${color0}${font Poky:size=13}w${font}${color}${goto 32}${voffset -1
 ${else}${voffset 8}${color0}${font ConkyColors:size=15}q${font}${color}${goto 32}${voffset -7}网络不可用${voffset 14}${endif}
 
 ${voffset -20}${font WenQuanYi Micro Hei:style=Bold:size=8}天气 $stippled_hr${font}
-${if_gw}${execpi 300 ~/.conkycolors/bin/weather 101280101 realtime}
-${execpi 1800 ~/.conkycolors/bin/weather 101280101 sixdays}
-${else}${voffset 8}${color0}${font ConkyColors:size=15}q${font}${color}${voffset -8}${goto 32}天气信息不可用${voffset 14}${endif}
+${execpi 300 ~/.conkycolors/bin/weather 101280101}
 
 ]]
