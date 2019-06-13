@@ -19,5 +19,5 @@ temp = data['data']['wendu']
 we = data['data']['forecast'][0]['type']
 fl = data['data']['forecast'][0]['fl']
 
-print("${font}${color}${goto 32}城市: ${color2}%s${color}${goto 245}温度: ${font Ubuntu:style=Bold:size=8}${color1}%sºC${color}${font}\n${goto 32}天气: ${color1}%s${color}${goto 245}风力: ${font}${color1}%s${color}${font}" % (city, temp, we, fl))
+print("${font}${color}${goto 32}城市: ${color2}%s${color}${goto 200}温度: ${font Ubuntu:style=Bold:size=8}${color1}%sºC${color}${font}\n${goto 32}天气: ${color1}%s${color}${goto 200}风力: ${font}${color1}%s${color}${font}" % (city, temp, we, fl))
 

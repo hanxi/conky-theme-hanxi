@@ -81,7 +81,7 @@ ${goto 32}CPU3 负荷: ${font Ubuntu:style=Bold:size=8}${color1}${cpu cpu4}%${co
 ${goto 32}CPU0 温度: ${font Ubuntu:style=Bold:size=8}${color1}${execi 4 sensors | grep "Core 0" | awk -F ' ' '{print $3}' | tr -d +}${color}${font}${goto 185}${voffset -9}CPU2 温度: ${font Ubuntu:style=Bold:size=8}${color1}${execi 4 sensors | grep "Core 2" | awk -F ' ' '{print $3}' | tr -d +}${color}${font}
 
 ${color0}${font Poky:size=16}M${font}${color}${goto 32}${voffset -7}内存占用率: ${font Ubuntu:style=Bold:size=8}${color1}$memperc%${color}${font}
-${offset 1}${voffset 2}${color0}${membar 4,18}${color}${goto 32}${voffset -2}总共: ${font Ubuntu:style=Bold:size=8}${color1}${memeasyfree}${color}${font}${goto 245}${voffset -10}使用: ${font Ubuntu:style=Bold:size=8}${color1}${mem}${color}${font}
+${offset 1}${voffset 2}${color0}${membar 4,18}${color}${goto 32}${voffset -2}总共: ${font Ubuntu:style=Bold:size=8}${color1}${memeasyfree}${color}${font}${goto 200}${voffset -10}使用: ${font Ubuntu:style=Bold:size=8}${color1}${mem}${color}${font}
 
 ${voffset 2}${color0}${font Poky:size=15}a${font}${color}${goto 32}${voffset -10}TOP3 进程: ${color2}${alignr 43}CPU${alignr}RAM${color}
 ${voffset 1}${goto 38}${color2}${top name 1}${color}${font Ubuntu:style=Bold:size=8}${color1}${alignr 43}${top cpu 1}${alignr}${top mem 1}${color}${font}
